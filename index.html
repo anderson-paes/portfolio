@@ -18,16 +18,16 @@ body {
 }
 
 h1 {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 4rem;
+    line-height: 4rem;
 }
 h2 {
-    font-size: large;
+    font-size: 1.2rem;
     font-weight: 300;
 
 }
 h3 {
-    font-size: medium;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -63,9 +63,8 @@ h3 {
     background-color: #fff;
     border: #bbb 1px solid;
     border-radius: 4px;
-    width: 370px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .section {
@@ -78,7 +77,7 @@ h3 {
 }
 
 .blocksize {
-    width: 394px;
+    width: 40%;
 }
 
 .-l {
@@ -102,7 +101,7 @@ h3 {
     text-align: center;
     padding-top: 60px;
     padding-left: 120px;
-    padding-right: 120px;
+    padding-right: 120px; 
     padding-bottom: 60px;
     background-image: url(assets/bg_sq.svg);
     background-repeat: repeat;
@@ -113,13 +112,13 @@ h3 {
     padding-top: 40px;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 15px;
+    padding-bottom: 32px; 
 }
 
 .cases {
     text-align: left;
-    padding-top: 90px;
-    padding-left: 120px;
+    padding-top: 60px;
+    padding-left: 120px; 
     padding-right: 120px;
     padding-bottom: 90px;
     background-image: url(assets/bg_lin.svg);
@@ -135,7 +134,7 @@ footer {
 .linkedin {
     color:white;
     background-color: #111;
-    font-size: large;
+    font-size: 1rem;
     font-weight: 500;
     border: rgba(94, 97, 100, 0.43) 1px solid;
     border-radius: 8px;
@@ -154,10 +153,55 @@ footer {
     color: #111;
 }
 
+@media only screen and (max-width: 400px) {
+body {
+    margin-left:8px;
+    margin-right: 8px;
+    padding: 0;
+
+}
+.cases {
+    padding: 16px;
+    width: 100%;
+}
+.intro {
+    padding: 16px;
+    width: 100%;
+    display: block;
+}
+.work {
+    padding: 16px;
+    width: 100%;
+}
+.summary {
+    width: 100%;
+    padding: 16px;
+}
+h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+.blocksize {
+    width: 90%;
+}
+.block {
+    text-align: left;
+    padding: 12px;
+    background-color: #fff;
+    border: #bbb 1px solid;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+footer {
+    text-align: center;
+}
+}
+
 </style>
 <body>
 <div class="intro">
-    <img class="bdr-50" src="assets/profile.jpg" width="120px"/>
+    <img class="bdr-50" src="assets/profile.jpg" width="100px"/>
     <h3 class="mt-16 mb-32"><b>Anderson Paes,</b> Product Designer. UX, UI & Data Visualization</h3>    
     <h1 class="mt-16 mb-32">I design human interface and experience <span class="marker">even for machines</span>.</h1>
     <h2 class="mt-16 mb-32">Product Designer with experience in UX/UI projects for apps, web, and data visualization. Currently working on a mobile and web project for an international client based in the US, in the Data Economy sector. I am also a professor in the field of Design.</h2>
@@ -176,7 +220,7 @@ footer {
 
 <div class="work">
     <div class="section -l mb-32">WORK EXPERIENCE & PROJECTS</div>
-    <div class="logos"><img src="assets/logos.svg" /></div>
+    <div class="logos"><img src="assets/logos.svg" width="100%"/></div>
 </div>
 
 <div class="cases">
