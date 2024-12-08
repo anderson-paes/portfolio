@@ -125,6 +125,23 @@ h3 {
     background-repeat: repeat;
 }
 
+.cases1 {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1 1 calc(33.33% - 16px); 
+  background-color: #f0f0f0; 
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
 footer {
     color: #777;
     text-align: right;
@@ -184,6 +201,9 @@ h1 {
 .blocksize {
     width: 90%;
 }
+.column {
+    flex: 1 1 100%;
+  }
 .block {
     text-align: left;
     padding: 12px;
@@ -225,13 +245,21 @@ footer {
 
 <div class="cases">
     <div class="section -l">IDEAS & CASES</div>
+
+    <div class="cases1">
+        <div class="column">Coluna 1</div>
+        <div class="column">Coluna 2</div>
+        <div class="column">Coluna 3</div>
+      </div>
+
     <h1 class="mt-16 mb-32">How I see the <span class="marker">future</span>.</h1>
-    <h2 class="mt-16 mb-32">I believe that in the coming years we will see human-computer interaction evolve considerably. Starting with the growing demand for hands-free interaction, including voice interaction – and this implies that we will also be approached by speaking devices, by almost conscious AIs –, we will see new autonomous technologies and wearables.</h2>
-    <h3>I have a great interest in physical interfaces and the use of digital interfaces in everyday products. This led me to study topics related to the application of proxemics in new means of interaction and how we will respond to it. I have been consolidating my research into content that I intend to publish soon.</h3>
+    <h2 class="mt-16 mb-32">I believe that in the coming years we will see human-computer interaction evolve considerably. Starting with the growing demand for hands-free interaction, including voice interaction – and this implies that we will also be approached by speaking devices, by almost conscious AIs –, we will see new autonomous technologies and wearables.
+</h2>
+        <h3>I have a great interest in physical interfaces and the use of digital interfaces in everyday products. This led me to study topics related to the application of proxemics in new means of interaction and how we will respond to it. I have been consolidating my research into content that I intend to publish soon.</h3>
 </div>
 
 </body>    
 <footer>
-    <div>This is a single page developed by a product designer with no cookies 🍪</div>
+    <div>A simple page developed by a product designer with no cookies 🍪</div>
 </footer>
 </html>
