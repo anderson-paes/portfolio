@@ -57,7 +57,7 @@ h3 {
     border-radius: 8px;
 }
 
-.block {
+/* .block {
     text-align: left;
     padding: 12px;
     background-color: #fff;
@@ -65,7 +65,7 @@ h3 {
     border-radius: 4px;
     margin-left: 30%;
     margin-right: 30%;
-}
+} */
 
 .section {
     text-align: left;
@@ -76,9 +76,17 @@ h3 {
     margin-right: auto;
 }
 
-.blocksize {
-    width: 40%;
+.section-case {
+    text-align: left;
+    letter-spacing: 6%;
+    font-weight: 300;
+    font-size: smaller;
+    color: #777;
 }
+
+/* .blocksize {
+    width: 40%;
+} */
 
 .-l {
     text-align: left;
@@ -125,21 +133,33 @@ h3 {
     background-repeat: repeat;
 }
 
-.cases1 {
+.flex {
   display: flex;
   gap: 16px;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column {
   flex: 1 1 calc(33.33% - 16px); 
-  background-color: #f0f0f0; 
-  padding: 12px;
+  background-color: #fff; 
+  padding: 24px;
   text-align: left;
   border: 1px solid #ddd;
   box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.future {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 120px; 
+    padding-right: 120px;
+    padding-bottom: 90px;
 }
 
 footer {
@@ -181,6 +201,10 @@ body {
     padding: 16px;
     width: 100%;
 }
+.future {
+    padding: 16px;
+    width: 100%;
+}
 .intro {
     padding: 16px;
     width: 100%;
@@ -198,13 +222,13 @@ h1 {
     font-size: 2.5rem;
     line-height: 2.5rem;
 }
-.blocksize {
+/* .blocksize {
     width: 90%;
-}
+} */
 .column {
     flex: 1 1 100%;
   }
-.block {
+/* .block {
     text-align: left;
     padding: 12px;
     background-color: #fff;
@@ -212,7 +236,7 @@ h1 {
     border-radius: 4px;
     margin-left: 16px;
     margin-right: 16px;
-}
+} */
 footer {
     text-align: center;
 }
@@ -228,14 +252,16 @@ footer {
 </div>
 
 <div class="summary">
-    <div class="section -l blocksize">SUMMARY</div>
-    <div class="block mb-8">🎓  Graduated in Product Design (BSc, 2017) and Communication (Advertising, BA, 2003; Journalism, BA, 2007)</div>    
-    <div class="block mb-8">🗄️  Experience as a UX/UI Designer, with previous works in Graphic and Industrial Design</div>    
-    <div class="block mb-8">🛠️  Proficient in design methodologies and tools</div>    
-    <div class="block mb-8">🎨  Skilled in prototyping with Figma and Adobe XD</div>    
-    <div class="block mb-8">🧩  Able to develop for the web using HTML, CSS, and JavaScript</div>    
-    <div class="block mb-16">🗣️  English, Spanish, Portuguese</div>    
-    <div class="section -r blocksize"><a class="linkedin" href="https://linkedin.com/in/andersonpaes" target="_blank">See more on LinkedIn</a></div>    
+    <div class="section -l">SUMMARY</div>
+    <div class="flex">
+    <div class="column">🎓  Graduated in Product Design (BSc, 2017) and Communication (Advertising, BA, 2003; Journalism, BA, 2007)</div>    
+    <div class="column">🗄️  Experience as a UX/UI Designer, with previous works in Graphic and Industrial Design</div>    
+    <div class="column">🛠️  Proficient in design methodologies and tools</div>    
+    <div class="column">🎨  Skilled in prototyping with Figma and Adobe XD</div>    
+    <div class="column">🧩  Able to develop for the web using HTML, CSS, and JavaScript</div>    
+    <div class="column">🗣️  English, Spanish, Portuguese</div>    
+</div>
+    <div class="section -r"><a class="linkedin" href="https://linkedin.com/in/andersonpaes" target="_blank">See more on LinkedIn</a></div>    
 </div>
 
 <div class="work">
@@ -244,22 +270,41 @@ footer {
 </div>
 
 <div class="cases">
-    <div class="section -l">IDEAS & CASES</div>
+    <div class="section -l">CASES</div>
 
-    <div class="cases1">
-        <div class="column">Coluna 1</div>
-        <div class="column">Coluna 2</div>
-        <div class="column">Coluna 3</div>
+    <div class="flex">
+        <div class="column">
+            <div class="section-case">CASE #1</div>
+            <h2><b>Supply Chain Management for Supermarket</b></h2>
+            1) Warehouse Management with Predictive Analysis IA for procurement and all the KPI; 2) A system to organize the relation between retail and the industry; 3) An experience map of the whole scenario; 4) The app to help the seller and the industry to schedule the delivery;
+        </div>
+
+        <div class="column">
+            <div class="section-case">CASE #2</div>
+            <h2><b>UX/UI for a payment App</b></h2>
+            Zapay's challenge was to create the initial mobile version of their web payment service for vehicles licenses and taxes. The design was focused on the interaction flow/sales funnel, maintaining consistency with the web version in an accessible way. A highlight of this work is the reachability feature applied to the multiple selection list. The solution for this feature, in addition to accessibility, contributes for the decision-making and not overload personal memory, making it easier to navigate and review what was previously selected.
+        </div>
+
+       <div class="column">
+            <div class="section-case">CASE #3</div>
+            <h2><b>Google UX Certificate</b></h2>
+            My prompt on Google UX Certificate was design a sales monitoring app for a large fast food chain. I thought of design this prompt locally, allowing comparisons between products to help each restaurant to analyse and increase their sales.
+        </div>
       </div>
 
+</div>
+
+<div class="future">
+    <div class="section -l">IDEAS & FUTURE</div>
     <h1 class="mt-16 mb-32">How I see the <span class="marker">future</span>.</h1>
     <h2 class="mt-16 mb-32">I believe that in the coming years we will see human-computer interaction evolve considerably. Starting with the growing demand for hands-free interaction, including voice interaction – and this implies that we will also be approached by speaking devices, by almost conscious AIs –, we will see new autonomous technologies and wearables.
 </h2>
         <h3>I have a great interest in physical interfaces and the use of digital interfaces in everyday products. This led me to study topics related to the application of proxemics in new means of interaction and how we will respond to it. I have been consolidating my research into content that I intend to publish soon.</h3>
+
 </div>
 
 </body>    
 <footer>
-    <div>A simple page developed by a product designer with no cookies 🍪</div>
+    <div>This is a simple page developed by a product designer with no cookies 🍪</div>
 </footer>
 </html>
