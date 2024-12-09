@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Anderson Paes Portfolio">
@@ -9,55 +10,73 @@
     <title>Anderson Paes • @andersonpaes</title>
 </head>
 <style>
-body {
-    background-color: #f3f3f3;
-    margin: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #111;
-    line-height: 1.6em;
-}
+    body {
+        background-color: #f3f3f3;
+        margin: 40px;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111;
+        line-height: 1.6em;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-}
-h2 {
-    font-size: 1.2rem;
-    font-weight: 300;
+    body.dark {
+        background-color: #111;
+        color: #f3f3f3;
+    }
 
-}
-h3 {
-    font-size: 1rem;
-    font-weight: 300;
-}
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
 
-.ml-8 {
-    margin-left: 8px;
-}
-.mt-16 {
-    margin-top: 16px;
-}
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 300;
 
-.mb-8 {
-    margin-bottom: 8px;
-}
-.mb-16 {
-    margin-bottom: 16px;
-}
-.mb-32 {
-    margin-bottom: 32px;
-}
+    }
 
-.bdr-50 {
-    border-radius: 50%;
-}
+    h3 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 
-.marker {
-    background-color: #F0FF42;
-    border-radius: 8px;
-}
+    .ml-8 {
+        margin-left: 8px;
+    }
 
-/* .block {
+    .mt-16 {
+        margin-top: 16px;
+    }
+
+    .mb-8 {
+        margin-bottom: 8px;
+    }
+
+    .mb-16 {
+        margin-bottom: 16px;
+    }
+
+    .mb-32 {
+        margin-bottom: 32px;
+    }
+
+    .bdr-50 {
+        border-radius: 50%;
+    }
+
+    .header {}
+
+    .marker {
+        background-color: #F0FF42;
+        border-radius: 8px;
+    }
+
+    body.dark .marker {
+        color: #111;
+    }
+
+    /* .block {
     text-align: left;
     padding: 12px;
     background-color: #fff;
@@ -67,171 +86,208 @@ h3 {
     margin-right: 30%;
 } */
 
-.section {
-    text-align: left;
-    letter-spacing: 6%;
-    font-weight: 600;
-    font-size: small;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .section {
+        text-align: left;
+        letter-spacing: 6%;
+        font-weight: 600;
+        font-size: small;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.section-case {
-    text-align: left;
-    letter-spacing: 6%;
-    font-weight: 300;
-    font-size: smaller;
-    color: #777;
-}
+    .section-case {
+        text-align: left;
+        letter-spacing: 6%;
+        font-weight: 300;
+        font-size: smaller;
+        color: #777;
+    }
 
-/* .blocksize {
+    /* .blocksize {
     width: 40%;
 } */
 
-.-l {
-    text-align: left;
-}
-.-r {
-    text-align: right;
-}
+    .-l {
+        text-align: left;
+    }
 
-.intro {
-    text-align: center;
-    padding-top: 60px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 40px;
-    background-image: url(assets/bg_dot.svg);
-    background-repeat: repeat;
-}
+    .-r {
+        text-align: right;
+    }
 
-.summary {
-    text-align: center;
-    padding-top: 60px;
-    padding-left: 120px;
-    padding-right: 120px; 
-    padding-bottom: 60px;
-    background-image: url(assets/bg_sq.svg);
-    background-repeat: repeat;
-}
+    .intro {
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 40px;
+        background-image: url(assets/bg_dot.svg);
+        background-repeat: repeat;
+    }
 
-.work {
-    text-align: center;
-    padding-top: 40px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 32px; 
-}
+    body.dark .intro {
+        background-image: url(assets/bg_dotdark.svg);
+    }
 
-.cases {
-    text-align: left;
-    padding-top: 60px;
-    padding-left: 120px; 
-    padding-right: 120px;
-    padding-bottom: 90px;
-    background-image: url(assets/bg_lin.svg);
-    background-repeat: repeat;
-}
+    .summary {
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 60px;
+        background-image: url(assets/bg_sq.svg);
+        background-repeat: repeat;
+    }
 
-.flex {
-  display: flex;
-  gap: 16px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 16px;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    body.dark .summary {
+        background-image: url(assets/bg_sqdark.svg);
+    }
 
-.column {
-  flex: 1 1 calc(33.33% - 16px); 
-  background-color: #fff; 
-  padding: 24px;
-  text-align: left;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+    .work {
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 32px;
+    }
 
-.future {
-    text-align: left;
-    padding-top: 20px;
-    padding-left: 120px; 
-    padding-right: 120px;
-    padding-bottom: 90px;
-}
+    .cases {
+        text-align: left;
+        padding-top: 60px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 90px;
+        background-image: url(assets/bg_lin.svg);
+        background-repeat: repeat;
+    }
 
-footer {
-    color: #777;
-    text-align: right;
-    font-size: smaller;
-}
+    body.dark .cases {
+        background-image: url(assets/bg_lindark.svg);
+    }
 
-.linkedin {
-    color:white;
-    background-color: #111;
-    font-size: 1rem;
-    font-weight: 500;
-    border: rgba(94, 97, 100, 0.43) 1px solid;
-    border-radius: 8px;
-    height: 44px;
-    width: 250px;
-    display: block;
-    text-align: center;
-    align-content: center;
-    text-decoration: none;
-    margin-left: auto;
-    margin-right: 0;
-}
+    .flex {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.linkedin:hover {
-    background-color: #F0FF42;
-    color: #111;
-}
+    .column {
+        flex: 1 1 calc(33.33% - 16px);
+        background-color: #fff;
+        padding: 24px;
+        text-align: left;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
 
-@media only screen and (max-width: 700px) {
-body {
-    margin-left:8px;
-    margin-right: 8px;
-    padding: 0;
+    body.dark .column {
+        border: 1px solid #777;
+        background-color: #1d1d1d;
+    }
 
-}
-.cases {
-    padding: 16px;
-    width: 100%;
-}
-.future {
-    padding: 16px;
-    width: 100%;
-}
-.intro {
-    padding: 16px;
-    width: 100%;
-    display: block;
-}
-.work {
-    padding: 16px;
-    width: 100%;
-}
-.summary {
-    width: 100%;
-    padding: 16px;
-}
-h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-}
-/* .blocksize {
+    .future {
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 90px;
+    }
+
+    footer {
+        color: #777;
+        text-align: right;
+        font-size: smaller;
+    }
+
+    .linkedin {
+        color: white;
+        background-color: #111;
+        font-size: 1rem;
+        font-weight: 500;
+        border: rgba(94, 97, 100, 0.43) 1px solid;
+        border-radius: 8px;
+        height: 44px;
+        width: 250px;
+        display: block;
+        text-align: center;
+        align-content: center;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    body.dark .linkedin {
+        color: black;
+        background-color: white;
+    }
+
+    .linkedin:hover {
+        background-color: #F0FF42;
+        color: #111;
+    }
+
+    body.dark .linkedin:hover {
+        background-color: #F0FF42;
+        color: #111;
+    }
+
+    @media only screen and (max-width: 400px) {
+        body {
+            margin-left: 8px;
+            margin-right: 8px;
+            padding: 0;
+
+        }
+
+        .cases {
+            padding: 16px;
+            width: 100%;
+        }
+
+        .future {
+            padding: 16px;
+            width: 100%;
+        }
+
+        .intro {
+            padding: 16px;
+            width: 100%;
+            display: block;
+        }
+
+        .work {
+            padding: 16px;
+            width: 100%;
+        }
+
+        .summary {
+            width: 100%;
+            padding: 16px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        /* .blocksize {
     width: 90%;
 } */
-.flex {
-    gap: 8px;
-}
-.column {
-    flex: 1 1 100%;
-  }
-/* .block {
+        .flex {
+            gap: 8px;
+        }
+
+        .column {
+            flex: 1 1 100%;
+        }
+
+        /* .block {
     text-align: left;
     padding: 12px;
     background-color: #fff;
@@ -240,77 +296,118 @@ h1 {
     margin-left: 16px;
     margin-right: 16px;
 } */
-footer {
-    text-align: center;
-}
-.linkedin {
-    width: 100%;
-}
-}
+        footer {
+            text-align: center;
+        }
 
+        .linkedin {
+            width: 100%;
+        }
+    }
 </style>
+
 <body>
-<div class="intro">
-    <img class="bdr-50" src="assets/profile.jpg" width="100px"/>
-    <h3 class="mt-16 mb-32"><b>Anderson Paes,</b> Product Designer. UX, UI & Data Visualization</h3>    
-    <h1 class="mt-16 mb-32">I design human interface and experience <span class="marker">even for machines</span>.</h1>
-    <h2 class="mt-16 mb-32">Product Designer with experience in UX/UI projects for apps, web, and data visualization. Currently working on a mobile and web project for an international client based in the US, in the Data Economy sector. I am also a professor in the field of Design.</h2>
-</div>
 
-<div class="summary">
-    <div class="section -l">SUMMARY</div>
-    <div class="flex">
-    <div class="column">🎓  Graduated in Product Design (BSc, 2017) and Communication (Advertising, BA, 2003; Journalism, BA, 2007)</div>    
-    <div class="column">🗄️  Experience as a UX/UI Designer, with previous works in Graphic and Industrial Design</div>    
-    <div class="column">🛠️  Proficient in design methodologies and tools</div>    
-    <div class="column">🎨  Skilled in prototyping with Figma and Adobe XD</div>    
-    <div class="column">🧩  Able to develop for web using HTML, CSS, and JavaScript</div>    
-    <div class="column">🗣️  English, Spanish, Portuguese</div>    
-</div>
-    <div class="section -r"><a class="linkedin" href="https://linkedin.com/in/andersonpaes" target="_blank">See more on LinkedIn</a></div>    
-</div>
+    <div id="toggle-dark-mode" class="-r">
+        <img id="theme-icon" src="assets/dark_mode.svg" width="24" height="24">
+        <script>
+            const themeIcon = document.getElementById('theme-icon');
+            const toggle = document.getElementById('toggle-dark-mode');
+            toggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark');
 
-<div class="work">
-    <div class="section -l mb-32">WORK EXPERIENCE & PROJECTS</div>
-    <div class="logos"><img src="assets/logos.svg" width="100%"/></div>
-</div>
+                if (document.body.classList.contains('dark')) {
+                    themeIcon.src = 'assets/light_mode.svg';
+                } else {
+                    themeIcon.src = 'assets/dark_mode.svg';
+                }
+            });
 
-<div class="cases">
-    <div class="section -l">CASES</div>
+        </script>
+    </div>
 
-    <div class="flex">
-        <div class="column">
-            <div class="section-case">CASE #1</div>
-            <h2><b>Supply Chain Management for Supermarket</b></h2>
-            1) Warehouse Management with Predictive Analysis IA for procurement and all the KPI; 2) A system to organize the relation between retail and the industry; 3) An experience map of the whole scenario; 4) The app to help the seller and the industry to schedule the delivery;
+    <div class="intro">
+        <img class="bdr-50" src="assets/profile.jpg" width="100px" />
+        <h3 class="mt-16 mb-32"><b>Anderson Paes,</b> Product Designer. UX, UI & Data Visualization</h3>
+        <h1 class="mt-16 mb-32">I design human interface and experience <span class="marker">even for machines</span>.
+        </h1>
+        <h2 class="mt-16 mb-32">Product Designer with experience in UX/UI projects for apps, web, and data
+            visualization. Currently working on a mobile and web project for an international client based in the US, in
+            the Data Economy sector. I am also a professor in the field of Design.</h2>
+    </div>
+
+    <div class="summary">
+        <div class="section -l">SUMMARY</div>
+        <div class="flex">
+            <div class="column">🎓 Graduated in Product Design (BSc, 2017) and Communication (Advertising, BA, 2003;
+                Journalism, BA, 2007)</div>
+            <div class="column">🗄️ Experience as a UX/UI Designer, with previous works in Graphic and Industrial Design
+            </div>
+            <div class="column">🛠️ Proficient in design methodologies and tools</div>
+            <div class="column">🎨  Skilled in prototyping with Figma and Adobe XD</div>
+            <div class="column">🧩 Able to develop for web using HTML, CSS, and JavaScript</div>
+            <div class="column">🗣️  English, Spanish, Portuguese</div>
+        </div>
+        <div class="section -r"><a class="linkedin" href="https://linkedin.com/in/andersonpaes" target="_blank">See more
+                on LinkedIn</a></div>
+    </div>
+
+    <div class="work">
+        <div class="section -l mb-32">WORK EXPERIENCE & PROJECTS</div>
+        <div class="logos"><img src="assets/logos.svg" width="100%" /></div>
+    </div>
+
+    <div class="cases">
+        <div class="section -l">CASES</div>
+
+        <div class="flex">
+            <div class="column">
+                <div class="section-case">CASE #1</div>
+                <h2><b>Supply Chain Management for Supermarket</b></h2>
+                1) Warehouse Management with Predictive Analysis IA for procurement and all the KPI; 2) A system to
+                organize the relation between retail and the industry; 3) An experience map of the whole scenario; 4)
+                The app to help the seller and the industry to schedule the delivery;
+            </div>
+
+            <div class="column">
+                <div class="section-case">CASE #2</div>
+                <h2><b>UX/UI for a payment App</b></h2>
+                Zapay's challenge was to create the initial mobile version of their web payment service for vehicles
+                licenses and taxes. The design was focused on the interaction flow/sales funnel, maintaining consistency
+                with the web version in an accessible way. A highlight of this work is the reachability feature applied
+                to the multiple selection list. The solution for this feature, in addition to accessibility, contributes
+                for the decision-making and not overload personal memory, making it easier to navigate and review what
+                was previously selected.
+            </div>
+
+            <div class="column">
+                <div class="section-case">CASE #3</div>
+                <h2><b>Google UX Certificate</b></h2>
+                My prompt on Google UX Certificate was design a sales monitoring app for a large fast food chain. I
+                thought of design this prompt locally, allowing comparisons between products to help each restaurant to
+                analyse and increase their sales.
+            </div>
         </div>
 
-        <div class="column">
-            <div class="section-case">CASE #2</div>
-            <h2><b>UX/UI for a payment App</b></h2>
-            Zapay's challenge was to create the initial mobile version of their web payment service for vehicles licenses and taxes. The design was focused on the interaction flow/sales funnel, maintaining consistency with the web version in an accessible way. A highlight of this work is the reachability feature applied to the multiple selection list. The solution for this feature, in addition to accessibility, contributes for the decision-making and not overload personal memory, making it easier to navigate and review what was previously selected.
-        </div>
+    </div>
 
-       <div class="column">
-            <div class="section-case">CASE #3</div>
-            <h2><b>Google UX Certificate</b></h2>
-            My prompt on Google UX Certificate was design a sales monitoring app for a large fast food chain. I thought of design this prompt locally, allowing comparisons between products to help each restaurant to analyse and increase their sales.
-        </div>
-      </div>
+    <div class="future">
+        <div class="section -l">IDEAS & FUTURE</div>
+        <h1 class="mt-16 mb-32">How I see the <span class="marker">future</span>.</h1>
+        <h2 class="mt-16 mb-32">I believe that in the coming years we will see human-computer interaction evolve
+            considerably. Starting with the growing demand for hands-free interaction, including voice interaction – and
+            this implies that we will also be approached by speaking devices, by almost conscious AIs –, we will see new
+            autonomous technologies and wearables.
+        </h2>
+        <h3>I have a great interest in physical interfaces and the use of digital interfaces in everyday products. This
+            led me to study topics related to the application of proxemics in new means of interaction and how we will
+            respond to it. I have been consolidating my research into content that I intend to publish soon.</h3>
 
-</div>
+    </div>
 
-<div class="future">
-    <div class="section -l">IDEAS & FUTURE</div>
-    <h1 class="mt-16 mb-32">How I see the <span class="marker">future</span>.</h1>
-    <h2 class="mt-16 mb-32">I believe that in the coming years we will see human-computer interaction evolve considerably. Starting with the growing demand for hands-free interaction, including voice interaction – and this implies that we will also be approached by speaking devices, by almost conscious AIs –, we will see new autonomous technologies and wearables.
-</h2>
-        <h3>I have a great interest in physical interfaces and the use of digital interfaces in everyday products. This led me to study topics related to the application of proxemics in new means of interaction and how we will respond to it. I have been consolidating my research into content that I intend to publish soon.</h3>
-
-</div>
-
-</body>    
+</body>
 <footer>
     <div>A simple page developed by a product designer with no cookies 🍪</div>
 </footer>
+
 </html>
