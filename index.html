@@ -17,7 +17,7 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #111;
         line-height: 1.6em;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     body.dark {
@@ -69,7 +69,8 @@
 
     .marker {
         background-color: #F0FF42;
-        border-radius: 8px;
+        border-radius: 2px;
+        display: inline-flex;
     }
 
     body.dark .marker {
@@ -171,7 +172,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -201,8 +202,8 @@
 
     footer {
         color: #777;
-        text-align: right;
-        font-size: smaller;
+        text-align: center;
+        font-size: x-small;
     }
 
     .linkedin {
@@ -237,7 +238,48 @@
         color: #111;
     }
 
-    @media only screen and (max-width: 700px) {
+    a {
+        color: dodgerblue;
+    }
+
+    a:hover {
+        background-color: #F0FF42;
+        color: #111;
+    }
+
+    .img_case {
+        border-radius: 4px;
+    }
+
+    hr {
+        border: #ccc 0.2px solid;
+    }
+
+    .tag {
+        height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 5%;
+        font-size: x-small;
+        border: #999 solid 0.5px;
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .hi {
+        background-color: lawngreen;
+    }
+    .hi1 {
+        background-color: aqua;
+    }
+    .hi2 {
+        background-color: #F0FF42;
+    }
+
+    body.dark .hi, .hi1, .hi2 {
+        color: #111;
+    }
+
+    @media only screen and (max-width: 400px) {
         body {
             margin-left: 8px;
             margin-right: 8px;
@@ -340,13 +382,10 @@
         <div class="section -l">SUMMARY</div>
         <div class="flex">
             <div class="column">🎓 Graduated in Product Design (BSc, 2017) and Communication (Advertising, BA, 2003;
-                Journalism, BA, 2007)</div>
-            <div class="column">🗄️ Experience as a UX/UI Designer, with previous works in Graphic and Industrial Design
-            </div>
-            <div class="column">🛠️ Proficient in design methodologies and tools</div>
-            <div class="column">🎨  Skilled in prototyping with Figma and Adobe XD</div>
-            <div class="column">🧩 Able to develop for web using HTML, CSS, and JavaScript</div>
-            <div class="column">🗣️  English, Spanish, Portuguese</div>
+                Journalism, BA, 2007)<p>🗄️ Experience as a UX/UI Designer, with previous works in Graphic and
+                    Industrial Design</p>🛠️ Proficient in design methodologies and tools</div>
+            <div class="column">🎨  Skilled in prototyping with Figma and Adobe XD<p>🧩 Able to develop for web using
+                    HTML, CSS, and JavaScript</p>🗣️  English, Spanish, Portuguese</div>
         </div>
         <div class="section -r"><a class="linkedin" href="https://linkedin.com/in/andersonpaes" target="_blank">See more
                 on LinkedIn</a></div>
@@ -363,51 +402,97 @@
         <div class="flex">
             <div class="column">
                 <div class="section-case">CASE #1</div>
-                <h2><b>Supply Chain Management for Supermarket</b></h2>
-                1) Warehouse Management with Predictive Analysis IA for procurement and all the KPI; 2) A system to
-                organize the relation between retail and the industry; 3) An experience map of the whole scenario; 4)
-                The app to help the seller and the industry to schedule the delivery;
+                <img class="img_case" src="assets/nexelloux.jpeg" width="100%" />
+                <img class="img_case" src="assets/nexelloux2.jpeg" width="100%" />
+                <h2><b>Supply Chain for Retail</b></h2>
+                I have worked on UX/UI for Inventory Management, Demand Forecasting, and Logistics Control systems in
+                their SaaS and app versions. I also contributed to adapting the workflow to an agile process with the
+                development team (Dual Track), optimizing performance and collaboration between the Product and
+                Development areas.
+                <br><br>
+                <span class="tag hi2">Discovery</span>
+                <span class="tag hi">Data Visualization</span>
+                <span class="tag hi1">Prototyping</span>
+                <span class="tag hi1">Metrics</span>
             </div>
 
             <div class="column">
                 <div class="section-case">CASE #2</div>
+                <img class="img_case" src="assets/zapayux1.png" width="100%" />
+                <img class="img_case" src="assets/zapayux.png" width="100%" />
                 <h2><b>UX/UI for a payment App</b></h2>
                 Zapay's challenge was to create the initial mobile version of their web payment service for vehicles
                 licenses and taxes. The design was focused on the interaction flow/sales funnel, maintaining consistency
                 with the web version in an accessible way. A highlight of this work is the reachability feature applied
-                to the multiple selection list. The solution for this feature, in addition to accessibility, contributes
-                for the decision-making and not overload personal memory, making it easier to navigate and review what
-                was previously selected.
+                to the multiple selection list.
+                <br><br>
+                <span class="tag hi">Accessbility</span>
+                <span class="tag hi1">Prototyping</span>
+                <span class="tag hi1">Interaction Flows</span>
+
             </div>
 
             <div class="column">
                 <div class="section-case">CASE #3</div>
+                <img class="img_case" src="assets/googleux.webp" width="100%" />
+                <img class="img_case" src="assets/googleux1.webp" width="100%" />
                 <h2><b>Google UX Certificate</b></h2>
                 My prompt on Google UX Certificate was design a sales monitoring app for a large fast food chain. I
                 thought of design this prompt locally, allowing comparisons between products to help each restaurant to
                 analyse and increase their sales.
+                <br><br>
+                <div><a href="https://andersonpaes.medium.com/mcdonalds-sales-monitor-8700d0e121af"
+                        target="_blank">Read more on Medium</a>
+                </div>
+                <br>
+                <span class="tag hi2">Discovery</span>
+                <span class="tag hi2">Research</span>
+                <span class="tag hi1">Prototyping</span>
+                <span class="tag hi1">Wireframes</span>
             </div>
         </div>
-
     </div>
 
     <div class="future">
         <div class="section -l">IDEAS & FUTURE</div>
-        <h1 class="mt-16 mb-32">How I see the <span class="marker">future</span>.</h1>
-        <h2 class="mt-16 mb-32">I believe that in the coming years we will see human-computer interaction evolve
-            considerably. Starting with the growing demand for hands-free interaction, including voice interaction – and
-            this implies that we will also be approached by speaking devices, by almost conscious AIs –, we will see new
-            autonomous technologies and wearables.
-        </h2>
-        <h3>I have a great interest in physical interfaces and the use of digital interfaces in everyday products. This
-            led me to study topics related to the application of proxemics in new means of interaction and how we will
-            respond to it. I have been consolidating my research into content that I intend to publish soon.</h3>
-
+        <div class="flex">
+            <div class="column">
+                <h1 class="mt-16 mb-32">How I see the <span class="marker">future</span>.</h1>
+                <h2 class="mt-16 mb-32">I believe that in the coming years we will see human-computer interaction evolve
+                    considerably. Starting with the growing demand for hands-free interaction, including voice
+                    interaction – and
+                    this implies that we will also be approached by speaking devices, by almost conscious AIs –, we will
+                    see new
+                    autonomous technologies and wearables.
+                </h2>
+                <h3>I have a great interest in physical interfaces and the use of digital interfaces in everyday
+                    products. This
+                    led me to study topics related to the application of proxemics in new means of interaction and how
+                    we will
+                    respond to it. I have been consolidating my research into content that I intend to publish soon.
+                </h3>
+            </div>
+            <div class="column">
+                <h1 class="mt-16 mb-32">Accelerating Tableau with <span class="marker">Figma</span>.</h1>
+                <h2 class="mt-16 mb-32">How a design system for creating new dashboards has enhanced the quality of
+                    delivery and contributed to validating our data products.</h2>
+                <h3>There is a discovery and creation phase before reaching the development stage. It was at this point
+                    of creation that we incorporated Figma to facilitate prototyping. Thus, we created an “alternative
+                    design system” focused on the data analysis our clients perform, with the necessary flexibility to
+                    explore new scenarios.</h3>
+                <br>
+                <div><a href="https://andersonpaes.medium.com/mcdonalds-sales-monitor-8700d0e121af"
+                        target="_blank">Read more on Medium</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
 <footer>
-    <div>A simple page developed by a product designer with no cookies 🍪</div>
+    <div>
+        Designed and developed by a Product Designer with no cookies 🍪
+    </div>
 </footer>
 
 </html>
