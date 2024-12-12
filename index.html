@@ -279,6 +279,23 @@
         color: #111;
     }
 
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 32px;
+    }
+
+    .menu a {
+        color: #111;
+        text-decoration: none;
+        font-size: small;
+    }
+
+    body.dark .menu a {
+        color: #f3f3f3;
+    }
+
     @media only screen and (max-width: 400px) {
         body {
             margin-left: 8px;
@@ -349,7 +366,15 @@
 </style>
 
 <body>
+    <div class="flex">
 
+<div class="menu">
+<a href="https://andersonpaes.com">@andersonpaes</a>
+<a href="https://behance.net/andersonpaes" target="_blank">Behance</a>
+<a href="https://dribbble.com/andersonpaes" target="_blank">Dribble</a>
+<a href="https://medium.com/@andersonpaes" target="_blank">Medium</a>
+<a href="https://linkedin.com/in/andersonpaes" target="_blank">LinkedIn</a>
+    </div>
     <div id="toggle-dark-mode" class="-r">
         <img id="theme-icon" src="assets/dark_mode.svg" width="24" height="24">
         <script>
@@ -367,7 +392,7 @@
 
         </script>
     </div>
-
+</div>
     <div class="intro">
         <img class="bdr-50" src="assets/profile.jpg" width="100px" />
         <h3 class="mt-16 mb-32"><b>Anderson Paes,</b> Product Designer. UX, UI & Data Visualization</h3>
@@ -426,7 +451,7 @@
                 with the web version in an accessible way. A highlight of this work is the reachability feature applied
                 to the multiple selection list.
                 <br><br>
-                <span class="tag hi">Accessibility</span>
+                <span class="tag hi">Accessbility</span>
                 <span class="tag hi1">Prototyping</span>
                 <span class="tag hi1">Interaction Flows</span>
 
